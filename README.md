@@ -1,2 +1,2 @@
 # PiPin
-Raspberry Pi pin cpntroller
+Raspberry Pi pin controller
