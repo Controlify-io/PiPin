@@ -18,8 +18,8 @@ int main(int argc, char **argv) {
 	if(pin < MIN_PIN || pin > MAX_PIN || !isGpio[pin]) showHelp(1);
 
 	unsigned char level;
-	if(strncmp(argv[2], "HIGH", 4) == 0) level = HIGH;
-	else if(strncmp(argv[2], "LOW", 3) == 0) level = LOW;
+	if(strncmp(argv[2], "HIGH", 4) == 0 || strncmp(argv[2], "ON", 4) == 0) level = HIGH;
+	else if(strncmp(argv[2], "LOW", 3) == 0 || strncmp(argv[2], "OFF", 3) == 0) level = LOW;
 	else showHelp(1);
 
 	printf("Setting pin %d to %d\n", pin, level);
